@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <title>Potin</title>
+  </head>
+  <body>
+    <h1>Page du Potin</h1>
+    
+    <p>Voici la page du potin n°<%= params['id'] %></p>
+    
+    <p>Son auteur : <%= Gossip.find(params['id'].to_i).author %></p>
+		<p>Le contenu du potin : <%= Gossip.find(params['id'].to_i).content %></p>
+
+    <p><a href="/">Retour à la page d'accueil</a></p>
+
+  </body>
+</html>
